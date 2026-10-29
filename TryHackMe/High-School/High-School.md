@@ -2,8 +2,11 @@
 
 TryHackMe — UA High School
 Platform: TryHackMe
+
 Room: UA High School
+
 Difficulty: Easy
+
 Category: Boot2Root
 
 Reconnaissance
