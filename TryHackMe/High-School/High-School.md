@@ -1,1 +1,1 @@
-![U.A. High School](image/intro)
+![U.A. High School](image/intro.png)
