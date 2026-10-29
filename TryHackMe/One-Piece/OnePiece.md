@@ -1,5 +1,3 @@
-TryHackMe One Piece Writeup
-
 ![One Piece Intro](./image/intro.png)
 
 Difficulty Level: Medium
@@ -17,11 +15,11 @@ Skills Required to Solve the One Piece CTF — TryHackMe
 
 Recommended Tools
 
-Burp Suite
-CyberChef
-Nmap
-Gobuster or FFUF
-Python
+Burp Suite,
+CyberChef,
+Nmap,
+Gobuster or FFUF,
+Python,
 Linux command-line utilities
 
 Warning: If you are currently watching or reading One Piece and haven't completed the Zou arc yet, be aware that this room contains spoilers.
