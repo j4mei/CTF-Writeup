@@ -1,3 +1,3 @@
 
 
-(image/intro.png)
+(./image/intro.png)
