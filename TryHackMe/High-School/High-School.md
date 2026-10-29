@@ -19,4 +19,4 @@ Open ports:22,80
 
 Services:ssh,http
 
-Service versions:
+Service versions:openSSH 8.2p1, Apache 2.4.41
