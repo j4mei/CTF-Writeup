@@ -27,3 +27,10 @@ Warning: If you are currently watching or reading One Piece and haven't complete
 We need to scan the target to identify open ports, running services, and potential entry points.
 
 ![nmap scaning](./image/nmap.png)
+
+
+The scan revealed three open ports on the target: 21 (FTP), 22 (SSH), and 80 (HTTP).
+We can also observe that the FTP service allows anonymous login, making it the first service to investigate.
+
+Port 21:FTP
+
