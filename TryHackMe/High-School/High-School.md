@@ -8,3 +8,15 @@ Room: UA High School
 Difficulty: Easy
 
 Category: Boot2Root
+
+Reconnaissance
+![Nmap scaning](image/nmap.png)
+
+
+Findings-->
+
+Open ports:22,80
+
+Services:ssh,http
+
+Service versions:
