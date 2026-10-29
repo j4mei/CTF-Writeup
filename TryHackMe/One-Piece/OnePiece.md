@@ -1,3 +1,2 @@
 
-
-(./image/intro.png)
+![One Piece Intro](./image/intro.png)
