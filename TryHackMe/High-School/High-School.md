@@ -66,3 +66,19 @@ Another clue led me to a JPG file, which turned out to be a significant discover
 I downloaded the JPG file to my local machine using the wget command for further analysis
 ![oneforall jpg](image/oneforall.png)
 
+I used MagicBytes, a useful tool for repairing corrupted image files by fixing their magic bytes. Alternatively, this can be done manually using a hex editor such as hexedit. For reference, I used the file signatures listed on Wikipedia to identify the correct file format.
+
+![magic bytes](image/magicbytes.png)
+
+After repairing the image file, I was able to open it successfully and found a cool image of Deku.
+
+![deku cool image](image/deku.png)
+
+I suspected that the image contained hidden data, so I used steghide to extract any embedded files. Since extraction required a passphrase, I used the password found in passphrase.txt. The extracted text file contained the credentials for the deku user.
+
+
+![steghide credit](image/cred.png)
+
+With the credentials obtained, I successfully connected to the machine via SSH as the deku user.
+
+
