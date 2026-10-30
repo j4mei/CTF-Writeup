@@ -91,11 +91,13 @@ After gaining access as the deku user, I ran sudo -l to check which commands the
 ![sudo -l](image/sudo.png)
 
 I discovered that the deku user could execute /path/feedback.sh as root. After inspecting the script, I found that it reads user input for feedback and processes it using eval echo, which could potentially allow command execution.
+
 ![cat feedback](image/cat.png)
 
-After inspecting feedback.sh, I identified a vulnerability caused by the use of the `eval` function, which evaluates input as a shell command. Since the script could be executed with root privileges, this flaw provided a potential path to privilege escalation.
+After inspecting feedback.sh, I identified a vulnerability caused by the use of the eval function, which evaluates input as a shell command. Since the script could be executed with root privileges, this flaw provided a potential path to privilege escalation.
 
 By exploiting this vulnerability, I could execute commands as root. One possible approach was to modify the sudoers configuration to grant the deku user elevated privileges.
+
 ![sudo feedback](image/sudo2.png)
 
 Command: deku ALL=NOPASSWD: ALL >> /etc/sudoers
@@ -103,6 +105,9 @@ Command: deku ALL=NOPASSWD: ALL >> /etc/sudoers
 After modifying the sudoers configuration, I ran sudo -l again and confirmed that the deku user now had unrestricted sudo privileges. To demonstrate successful privilege escalation, I accessed /root/root.txt and retrieved the root flag.
 
 I used sudo su to obtain a root shell. With full root privileges, I accessed /root/root.txt and retrieved the root flag, confirming successful privilege escalation.
+
 ![root flag](image/root.png)
 
 Thank you for reading my writeup! :)
+
+![Ending]()
