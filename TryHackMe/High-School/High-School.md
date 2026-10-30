@@ -48,7 +48,7 @@ Next, we decoded the Base64 output to examine the command's actual response.
 
 
 After confirming that commands could be executed through the URL, we used the Revshells tool to generate a reverse shell payload and attempt to establish a connection with the server.
-![shell gen](image/shellgen.png)
+![shell gen](image/shellGen.png)
 
 Next, I started a Netcat listener on my machine using nc -nlvp 9001 to listen for an incoming reverse shell connection.
 ![shell connection](image/shell.png)
