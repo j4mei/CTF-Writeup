@@ -85,7 +85,7 @@ With the credentials obtained, I successfully connected to the machine via SSH a
 After logging in as deku, I explored the user's directory using ls and retrieved the user flag using the cat command.
 ![user flag](image/user.png)
 
-Local Privilege Escalation
+### Local Privilege Escalation
 
 After gaining access as the deku user, I ran sudo -l to check which commands the user could execute with elevated privileges.
 ![sudo -l](image/sudo.png)
@@ -100,7 +100,7 @@ By exploiting this vulnerability, I could execute commands as root. One possible
 
 ![sudo feedback](image/sudo2.png)
 
-Command: deku ALL=NOPASSWD: ALL >> /etc/sudoers
+**Command: deku ALL=NOPASSWD: ALL >> /etc/sudoers**
 
 After modifying the sudoers configuration, I ran sudo -l again and confirmed that the deku user now had unrestricted sudo privileges. To demonstrate successful privilege escalation, I accessed /root/root.txt and retrieved the root flag.
 
