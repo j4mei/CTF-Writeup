@@ -110,4 +110,4 @@ I used sudo su to obtain a root shell. With full root privileges, I accessed /ro
 
 Thank you for reading my writeup! :)
 
-![Ending]()
+![Ending](image/ending.png)
