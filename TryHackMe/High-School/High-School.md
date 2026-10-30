@@ -47,4 +47,15 @@ Next, we decoded the Base64 output to examine the command's actual response.
 ![base64 decode](image/base64.png)
 
 
+After confirming that commands could be executed through the URL, we used the Revshells tool to generate a reverse shell payload and attempt to establish a connection with the server.
+![shell gen](image/shellgen.png)
 
+Next, I started a Netcat listener on my machine using nc -nlvp 9001 to listen for an incoming reverse shell connection.
+![shell connection](image/shell.png)
+
+After establishing the connection, I investigated the machine further and analyzed the clues provided. During this process, I discovered a password encoded in Base64.
+![hidding file](image/hidding.png)
+
+![base62 02 decode](image/base64-2.png)
+
+I suspected this password would be useful later, so I saved it in my notes and continued investigating the machine.
