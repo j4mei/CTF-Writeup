@@ -59,3 +59,10 @@ After establishing the connection, I investigated the machine further and analyz
 ![base62 02 decode](image/base62-2.png)
 
 I suspected this password would be useful later, so I saved it in my notes and continued investigating the machine.
+
+Another clue led me to a JPG file, which turned out to be a significant discovery during the investigation.
+![image jpg](image/image.png)
+
+I downloaded the JPG file to my local machine using the wget command for further analysis
+![oneforall jpg](image/oneforall.png)
+
