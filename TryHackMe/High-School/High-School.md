@@ -79,6 +79,6 @@ I suspected that the image contained hidden data, so I used steghide to extract 
 
 ![steghide credit](image/cred.png)
 
-
+With the credentials obtained, I successfully connected to the machine via SSH as the deku user.
 
 
