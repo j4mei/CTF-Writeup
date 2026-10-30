@@ -1,6 +1,6 @@
 ![U.A. High School](image/intro.png)
 
-TryHackMe — UA High School
+**TryHackMe — UA High School**
 
 Platform: TryHackMe
 
@@ -108,6 +108,6 @@ I used sudo su to obtain a root shell. With full root privileges, I accessed /ro
 
 ![root flag](image/root.png)
 
-Thank you for reading my writeup! :)
+# Thank you for reading my writeup! :)
 
 ![Ending](image/ending.png)
