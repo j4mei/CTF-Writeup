@@ -102,4 +102,4 @@ Now, I will use John the Ripper to crack the hash.
 
 ![john ](image/john.png)
 
-I found the username:kamishiro & password:password123. Now, I will use these credentials to connect via SSH.**
+**I found the username:kamishiro & password:password123. Now, I will use these credentials to connect via SSH.**
