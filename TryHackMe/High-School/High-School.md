@@ -23,19 +23,19 @@ Services:ssh,http
 
 Service versions: openSSH 8.2p1, Apache 2.4.41
 
-We can assume that we will connect to the server via SSH later.
+**We can assume that we will connect to the server via SSH later.**
 
 I navigate to the web page, where I am greeted by a simple page with no obvious clues.
 ![web page](image/web.png)
 
 I inspected the website's source code and, after further investigation, found an internal URL in the CSS file that loads the background image.
+
 ![source page](image/source.png)
 
 Next, I used FFUF to discover hidden directories and files on the web server.
+
 ![ffuf 01](image/fuff01.png)
-
 ![ffuf 02](image/fuff02.png)
-
 ![ffuf 03](image/fuff03.png)
 
 
