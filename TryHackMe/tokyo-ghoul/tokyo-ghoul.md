@@ -68,7 +68,8 @@ In CyberChef, I used the following steps to decode the message:
 4. From Base64
 5. From Base64
 
+**Now, we will use this message as an HTTP website directory.**
 
-
+![scan me](image/httpscanme.png)
 
 
