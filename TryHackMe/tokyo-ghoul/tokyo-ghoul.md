@@ -79,3 +79,6 @@ In CyberChef, I used the following steps to decode the message:
 **After running DIRB, I found an endpoint in the claim directory.**
 
 ![claim](image/httphide.png)
+
+It redirected me to another page. I thought there might be a vulnerability, so I checked the available options on the page.
+
