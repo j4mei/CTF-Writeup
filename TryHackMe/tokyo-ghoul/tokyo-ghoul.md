@@ -90,4 +90,10 @@ I couldn't see anything on the page, but I noticed something strange in the URL.
 
 **It looks like we found an LFI vulnerability, but it is not showing any results. So, I will try URL encoding.**
 
+Now, I will try URL encoding the LFI payload.
+
+%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2Fetc%2Fpasswd
+
 ![encoding url](image/lfl.png)
+
+**we’ve found something. we can see username and password hash.**
