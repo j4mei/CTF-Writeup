@@ -130,3 +130,7 @@ I got a root shell. Now, I will check the root flag.
 
 ![root flag](image/root.png)
 
+
+#Thank you for reading my writeup! :)
+
+![Ending](image/ending.jpeg)
