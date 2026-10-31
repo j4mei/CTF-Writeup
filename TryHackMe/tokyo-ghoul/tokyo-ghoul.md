@@ -72,4 +72,10 @@ In CyberChef, I used the following steps to decode the message:
 
 ![scan me](image/httpscanme.png)
 
+**Now, I will use DIRB to find hidden directories on the website.**
 
+![dirb](image/dirb.png)
+
+**After running DIRB, I found an endpoint in the claim directory.**
+
+![claim](image/httphide.png)
