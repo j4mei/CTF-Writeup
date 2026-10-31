@@ -97,3 +97,9 @@ Now, I will try URL encoding the LFI payload.
 ![encoding url](image/lfl.png)
 
 **we’ve found something. we can see username and password hash.**
+
+Now, I will use John the Ripper to crack the hash.
+
+![john ](image/john.png)
+
+**I found the username:kamishiro & password:password123. Now, I will use these credentials to connect via SSH.**
