@@ -1,5 +1,5 @@
 ![tokyo intro](image/into.png)
-**Tokyo Ghoul TryHackMe**
+# Tokyo Ghoul TryHackMe
 
 **Machine Information**
 
