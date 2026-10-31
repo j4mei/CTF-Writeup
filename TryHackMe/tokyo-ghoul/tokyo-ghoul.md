@@ -21,3 +21,16 @@ Port 21 allows anonymous login.
 I opened the website running on port 80
 
 ![http source page](image/http.png)
+
+**The source code mentioned anonymous FTP login, so I decided to connect to the FTP server.**
+
+![ftp login anonymous](image/ftp.png)
+
+**After logging into the FTP server, I found three files:**
+
+- aogiri_tree.txt
+- rize_and_kaneki.jpg
+- need_to_talk
+
+
+- 
