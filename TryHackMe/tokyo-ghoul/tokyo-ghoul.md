@@ -79,3 +79,21 @@ In CyberChef, I used the following steps to decode the message:
 **After running DIRB, I found an endpoint in the claim directory.**
 
 ![claim](image/httphide.png)
+
+It redirected me to another page. I thought there might be a vulnerability, so I checked the available options on the page.
+
+![flow entpoint](image/flower.png)
+
+I couldn't see anything on the page, but I noticed something strange in the URL. It looked like LFI, so I decided to test it.
+
+![LFI try](image/tryetc.png)
+
+**It looks like we found an LFI vulnerability, but it is not showing any results. So, I will try URL encoding.**
+
+Now, I will try URL encoding the LFI payload.
+
+%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2Fetc%2Fpasswd
+
+![encoding url](image/lfl.png)
+
+**we’ve found something. we can see username and password hash.**
