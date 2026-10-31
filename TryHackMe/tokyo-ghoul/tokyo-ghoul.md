@@ -32,6 +32,7 @@ I found three files on the FTP server: aogiri_tree.txt, rize_and_kaneki.jpg, and
 I used the get command to download all three files to my machine. Now I will check these files.
 
 -**need_to_talk**
+
 Now, I will try to run these files.
 
 ![run file](image/need-to-talk.png)
@@ -47,9 +48,13 @@ I ran the file again and entered Kamishiro as the keyword. It gave me the text Y
 
 -**rize_and_kaneki.jpg**
 
+I found a password and used it with steghide on the rize_and_kaneki.jpg image. It successfully extracted a file named yougotme.txt.
+
 ![steghide](image/steghide.png)
 
-I found a password and used it with steghide on the rize_and_kaneki.jpg image. It successfully extracted a file named yougotme.txt.
+Now, I will use the cat command to check the contents of yougotme.txt.
+
+
 
 
 
