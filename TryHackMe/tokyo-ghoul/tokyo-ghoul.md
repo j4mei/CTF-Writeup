@@ -110,7 +110,7 @@ Now, I will use John the Ripper to crack the hash.
 
 ![user flag](image/user.png)
 
-##privilege escalation
+## privilege escalation
 
 ![sudo -l](image/sudo.png)
 
@@ -131,6 +131,6 @@ I got a root shell. Now, I will check the root flag.
 ![root flag](image/root.png)
 
 
-#Thank you for reading my writeup! :)
+# Thank you for reading my writeup! :)
 
-![Ending](image/ending.jpeg)
+![Ending](image/ending.png)
