@@ -11,8 +11,8 @@ Difficulty:medium
 
 Category: Boot2Root
 
-
 **Network Scanning**
+
 ![nmap](image/nmap.png)
 
 
