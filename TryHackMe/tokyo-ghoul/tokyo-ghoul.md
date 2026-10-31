@@ -109,3 +109,22 @@ Now, I will use John the Ripper to crack the hash.
 **I successfully connected via SSH. Now, I will look for the user flag.**
 
 ![user flag](image/user.png)
+
+##privilege escalation
+
+![sudo -l](image/sudo.png)
+
+I checked the jail.py file using the cat command. I found that it was based on Python, so I decided to try a Python payload.
+
+![cat jail](image/cat-jail.png)
+
+**Since the jail was running Python, I used a Python payload to execute a system command and read the root flag.**
+
+__builtins__.__dict__['__IMPORT__'.lower()]('OS'.lower()).__dict__['SYSTEM'.lower()]('cat /root/root.txt')
+
+![python payload](image/payload.png)
+
+I got a root shell. Now, I will check the root flag.
+
+![root flag](image/root.png)
+
