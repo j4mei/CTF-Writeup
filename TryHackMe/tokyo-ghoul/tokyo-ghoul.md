@@ -54,7 +54,19 @@ I found a password and used it with steghide on the rize_and_kaneki.jpg image. I
 
 Now, I will use the cat command to check the contents of yougotme.txt.
 
+![yougotme](image/cat-yougotme.png)
 
+I found some Morse code. Let's decode it using the CyberChef website.
+
+![cyberchef](image/cyberchef.png)
+
+In CyberChef, I used the following steps to decode the message:
+
+1. From Morse Code
+2. From Hex
+3. To Base64
+4. From Base64
+5. From Base64
 
 
 
