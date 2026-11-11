@@ -69,7 +69,7 @@ I saved both files locally as user.txt and kira.txt so I could use them with Hyd
 
 ![hydra](screenshots/hydra12.png)
 
-Using Hydra, I successfully found valid SSH credentials for the l user, which allowed me to move forward with SSH access.
+Using Hydra, I successfully found valid SSH credentials for the `l` user, which allowed me to move forward with SSH access.
 
 ![ssh l](screenshots/L13.png)
 
@@ -88,3 +88,48 @@ At this point, I had successfully gained SSH access to the target machine as the
 After gaining SSH access, I explored the directories available to the `l` user. During enumeration, I discovered an interesting clue inside the `/opt` directory.
 
 ![kira case](screenshots/kira-16.png)
+
+Inside `case-file.txt`, I found a hint directing me to investigate the `fake-notebook-rule` directory. I decided to explore the directory and check its contents.
+
+![fake notebook](screenshots/fake-notebook17.png)
+
+The hint suggested using CyberChef to decode the data. I also found a file named `case.wav`, which contained an encoded message. I decided to analyze and decode it using CyberChef.
+
+![cyberchef use](screenshots/cyberchef-18.png)
+
+I used CyberChef to decode the encoded data. First, I applied the **From Hex** operation, followed by **From Base64**. After decoding it successfully, I obtained a password.
+
+Since SSH had two users, `l` and `kira`, I suspected that the recovered password might belong to the `kira` account. I decided to test it by attempting to log in as `kira`.
+
+![kira login](screenshots/kira-shell-19.png)
+
+The password belonged to `kira`. After logging in, I found a file named `kira.txt` in the user's home directory.
+
+![kira.txt](screenshots/kiratxt-20.png)
+
+The `kira.txt` file contained encoded text that appeared to be Base64. I used CyberChef to decode it.
+
+![cyberchef base64](screenshots/cyberchef-21.png)
+
+After decoding, I found references to `/opt` and `/var`, along with a message asking to protect one of these directories. Since I had already explored `/opt`, I decided to check the other directory, `/var`.
+
+![misa](screenshots/misa-22.png)
+
+Inside `/var`, I found a file named `misa.txt`, which contained the message: "It is too late for Misa"
+
+**Privilege Escalation**
+
+After exploring the available directories and clues, I moved on to privilege escalation to gain root access.
+
+![sudo -l](screenshots/sudo-23.png)
+
+I ran `sudo -l` as the `kira` user and found that it had permission to run all commands with sudo privileges (`(ALL : ALL) ALL`).
+
+I used `sudo su` to switch to the root user and successfully obtained a root shell.
+
+![root command](screenshots/root-24.png)
+
+I successfully gained root access to the Deathnote machine
+
+
+# Thanks for taking the time to follow my writeup!
