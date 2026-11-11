@@ -135,7 +135,8 @@ I used `sudo su` to switch to the root user and successfully obtained a root she
 
 ![root command](screenshots/root-24.png)
 
-I successfully gained root access to the Deathnote machine
+**I successfully gained root access to the Deathnote machine**
+
 
 
 # Thanks for taking the time to follow my writeup!
