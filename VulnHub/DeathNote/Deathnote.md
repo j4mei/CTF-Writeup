@@ -1,9 +1,13 @@
 ![Death Note Banner](screenshots/int.png)
 
 Machine: Deathnote: 1
+
 Platform: VulnHub
+
 Difficulty: Easy
+
 Author: HWKDS
+
 OS: Linux
 
 **1. Reconnaissance**
@@ -42,7 +46,8 @@ While inspecting the page source, I found an endpoint pointing to the WordPress 
 
 ![url endpoint](screenshots/url06.png)
 
-After that, I removed the unnecessary directory path from the URL and accessed the uploads directory directly to check its contents.
+After that, I removed the unnecessary directory path from the URL and accessed the uploads directory directly to check its contents
+
 ![uploads](screenshots/uploads-07.png)
 
 Inside the uploads directory, I found a folder named 2021. I explored its contents and found a directory named 07 containing some files. However, the 08 and 09 directories did not contain anything useful.
@@ -59,7 +64,7 @@ After checking note.txt I suspected that its contents might be a password list.
 
 After inspecting user.txt, I confirmed that it contained a list of usernames, while note.txt contained a list of possible passwords.
 
-*Now that I had both username and password lists, I decided to use Hydra to test for valid SSH credentials.*
+**Now that I had both username and password lists, I decided to use Hydra to test for valid SSH credentials.**
 
 ![hydra](screenshots/hydra12.png)
 
