@@ -69,7 +69,9 @@ After checking note.txt I suspected that its contents might be a password list.
 After inspecting user.txt, I confirmed that it contained a list of usernames, while note.txt contained a list of possible passwords.
 
 I saved both files locally as user.txt and kira.txt so I could use them with Hydra
-**Now that I had both username and password lists, I decided to use Hydra to test for valid SSH credentials.**
+Now that I had both username and password lists,
+
+**I decided to use Hydra to test for valid SSH credentials.**
 
 ![hydra](screenshots/hydra12.png)
 
