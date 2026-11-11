@@ -10,7 +10,7 @@ Author: HWKDS
 
 OS: Linux
 
-**1. Reconnaissance**
+**Reconnaissance**
 
 I started with an Nmap scan to identify open ports and running services on the target machine.
 
@@ -22,7 +22,7 @@ The scan revealed two open ports:
 
 Port 80 indicated that a web server was running, while port 22 indicated that SSH was available for remote access.
 
-**2. Web Enumeration**
+**Web Enumeration**
 
 ![http](screenshots/http02.png)
 
