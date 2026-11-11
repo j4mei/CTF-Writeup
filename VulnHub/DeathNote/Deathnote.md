@@ -41,3 +41,25 @@ After spending quite some time exploring the website, I decided to inspect its s
 While inspecting the page source, I found an endpoint pointing to the WordPress uploads directory. I discovered an image named cropped-kiralogo.jpeg and visited the URL to investigate it further.
 
 ![url endpoint](screenshots/url06.png)
+
+After that, I removed the unnecessary directory path from the URL and accessed the uploads directory directly to check its contents.
+![uploads](screenshots/uploads-07.png)
+
+Inside the uploads directory, I found a folder named 2021. I explored its contents and found a directory named 07 containing some files. However, the 08 and 09 directories did not contain anything useful.
+
+![07 note](screenshots/notes09.png)
+
+Inside the 07 directory, I found two text files: note.txt and user.txt The note.txt file matched the hint I had discovered earlier on the website, while user.txt was an additional file I found during enumeration.
+
+![note txt](screenshots/note10.png)
+
+After checking note.txt I suspected that its contents might be a password list.
+
+![user txt](screenshots/user11.png)
+
+After inspecting user.txt, I confirmed that it contained a list of usernames, while note.txt contained a list of possible passwords.
+
+*Now that I had both username and password lists, I decided to use Hydra to test for valid SSH credentials.*
+
+![hydra](screenshots/hydra12.png)
+
