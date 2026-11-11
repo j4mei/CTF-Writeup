@@ -30,13 +30,13 @@ The Gobuster scan did not reveal anything useful. While checking the robots.txt 
 
 After that, I decided to inspect the website more carefully to look for any hidden clues or interesting details.
 
-![kira hint](screenshots/hint04.png)
+![kira hint](screenshots/Hint04.png)
 
 While inspecting the website, I found a hint left by Kira. The hint suggested looking for a file named note.txt on the server.
 
 After spending quite some time exploring the website, I decided to inspect its source code to look for hidden information or clues
 
-![source code](sourceCode05.png)
+![source code](screenshots/sourceCode05.png)
 
 While inspecting the page source, I found an endpoint pointing to the WordPress uploads directory. I discovered an image named cropped-kiralogo.jpeg and visited the URL to investigate it further.
 
