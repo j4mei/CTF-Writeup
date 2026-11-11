@@ -50,7 +50,11 @@ After that, I removed the unnecessary directory path from the URL and accessed t
 
 ![uploads](screenshots/uploads-07.png)
 
-Inside the uploads directory, I found a folder named 2021. I explored its contents and found a directory named 07 containing some files. However, the 08 and 09 directories did not contain anything useful.
+Inside the uploads directory, I found a folder named 2021
+
+![2021 folder](screenshots/2021-08.png)
+
+I explored its contents and found a directory named 07 containing some files. However, the 08 and 09 directories did not contain anything useful.
 
 ![07 note](screenshots/notes09.png)
 
