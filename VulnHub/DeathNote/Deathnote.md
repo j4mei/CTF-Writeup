@@ -64,7 +64,27 @@ After checking note.txt I suspected that its contents might be a password list.
 
 After inspecting user.txt, I confirmed that it contained a list of usernames, while note.txt contained a list of possible passwords.
 
+I saved both files locally as user.txt and kira.txt so I could use them with Hydra
 **Now that I had both username and password lists, I decided to use Hydra to test for valid SSH credentials.**
 
 ![hydra](screenshots/hydra12.png)
 
+Using Hydra, I successfully found valid SSH credentials for the l user, which allowed me to move forward with SSH access.
+
+![ssh l](screenshots/L13.png)
+
+I successfully logged in to the target machine via SSH using the credentials of the l user.
+
+After logging in as the `l` user, I explored the home directory and found a file named `user.txt`.
+
+![l user.txt](screenshots/L14.png)
+
+After examining the contents of `user.txt`, I discovered that it was written in Brainfuck, an esoteric programming language. I researched the language and used an online Brainfuck decoder to decode the content.
+
+![brainfuck language](screenshots/brain15.png)
+
+At this point, I had successfully gained SSH access to the target machine as the `l` user.
+
+After gaining SSH access, I explored the directories available to the `l` user. During enumeration, I discovered an interesting clue inside the `/opt` directory.
+
+![kira case](screenshots/kira-16.png)
