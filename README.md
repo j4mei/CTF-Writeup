@@ -18,3 +18,4 @@ Machines, labs, and CTF challenges.
 
 ---
 
+![main banner](image/main-banner.png)
