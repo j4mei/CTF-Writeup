@@ -100,7 +100,5 @@ The `tom` user had root privileges.
 
 ![root](screenshots/16-root.png)
 
-Kuch aisa?
-
 ## Thanks for Reading ❤️
 
