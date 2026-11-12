@@ -1,3 +1,5 @@
+![banner](screenshots/banner.png)
+
 # Vegeta - VulnHub CTF
 
 ## Machine Information
