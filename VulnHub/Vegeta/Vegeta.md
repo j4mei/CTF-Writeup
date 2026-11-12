@@ -85,9 +85,9 @@ The `trunks` user has permission to access `/etc/passwd`.
 
 We found the `.bash_history` file and copied its contents to review the previously executed commands.
 
-![tom](screenshots/13-tom.png)
-
 We added the `tom` user back to `/etc/passwd` by copying and pasting an entry.
+
+![tom](screenshots/13-tom.png)
 
 ![Tom user](screenshots/15-Tom.png)
 
