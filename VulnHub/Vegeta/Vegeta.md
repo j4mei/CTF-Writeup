@@ -56,7 +56,7 @@ After scanning the QR code, we found a password: `topshellv`.
 
 Next, we checked another directory on the web server named `/bulme`.
 
-![bulme](screenshots/09-bulme.png)
+![bulme](screenshots/09-bulma.png)
 
 Inside `/blume`, we found `hahahah.wav`. It was an MP3 audio file containing Morse code sounds.
 
@@ -74,4 +74,33 @@ Successfully logged in via SSH using:
 
 - **Username:** `trunks`
 - **Password:** `u$3r`
+
+**Privilege Escalation**
+
+Started privilege escalation by checking .bash_history using ls -la.
+
+![privilege](screenshots/12-ssh.png)
+
+The `trunks` user has permission to access `/etc/passwd`.
+
+We found the `.bash_history` file and copied its contents to review the previously executed commands.
+
+![tom](screenshots/13-tom.png)
+
+We added the `tom` user back to `/etc/passwd` by copying and pasting an entry.
+
+![Tom user](screenshots/15-Tom.png)
+
+We switched to the `tom` user using `su` and gained a root shell.
+
+**Username:** `tom`  
+**Password:** `password@973`
+
+The `tom` user had root privileges.
+
+![root](screenshots/16-root.png)
+
+Kuch aisa?
+
+## Thanks for Reading ❤️
 
